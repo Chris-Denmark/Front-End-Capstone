@@ -36,20 +36,6 @@ export const CollectionForm = () => {
         }
       }
 
-    useEffect(() => {
-      getCollections().then(() => {
-        if (collectionId) {
-          getCollectionById(collectionId)
-          .then(collection => {
-              setCollection(collection)
-              setIsLoading(false)
-          })
-        } else {
-          setIsLoading(false)
-        }
-      })
-    }, [])
-
     return (
       <form className="collectionForm">
         <h2 className="collectionForm__title">{collectionId ? "Edit Collection" : "Add Collection"}</h2>

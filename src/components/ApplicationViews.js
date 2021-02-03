@@ -8,13 +8,26 @@ import { CollectionDetail } from "./collections/CollectionDetail"
 
 export const ApplicationViews = () => {
   return (
-    <>
-      {
+    <>  
         <Route exact path="/">
-          <Home />
+          <CollectionList />
         </Route>
 
-      }
+        <CollectionProvider>
+          <Route exact path="/collections">
+            <CollectionList />
+          </Route>
+
+          <Route path="/collections/create">
+            <CollectionForm />
+          </Route>
+
+          <Route path="/collections/edit/:collectionId(\d+)">
+            <CollectionForm />
+          </Route>
+        </CollectionProvider>
+        
+      
     </>
   )
 }
