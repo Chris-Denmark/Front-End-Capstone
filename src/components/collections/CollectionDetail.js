@@ -4,7 +4,7 @@ import "./Collection.css"
 import { useParams, useHistory } from "react-router-dom"
 
 export const CollectionDetail = () => {
-  const { getCollectionById, deleteCollection } = useContext(collectionContext)
+  const { getCollectionById, deleteCollection } = useContext(CollectionContext)
 
 	const [collection, setCollection] = useState({})
 
