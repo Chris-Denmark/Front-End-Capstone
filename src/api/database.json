@@ -8,9 +8,8 @@
   ],
   "collections": [
     {
-      "name": "collection 1",
-      "pops": [],
-      "id": 1
+      "id": 1,
+      "name": "Chris's Collection"
     }
   ]
 }

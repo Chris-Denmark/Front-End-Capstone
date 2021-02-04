@@ -9,11 +9,12 @@ import { CollectionDetail } from "./collections/CollectionDetail"
 export const ApplicationViews = () => {
   return (
     <>  
+    <CollectionProvider>
         <Route exact path="/">
-          <CollectionList />
+          
+            <CollectionList />
         </Route>
 
-        <CollectionProvider>
           <Route exact path="/collections">
             <CollectionList />
           </Route>
@@ -25,9 +26,11 @@ export const ApplicationViews = () => {
           <Route path="/collections/edit/:collectionId(\d+)">
             <CollectionForm />
           </Route>
+
+          <Route exact path="/collections/detail/:collectionId(\d+)">
+            <CollectionDetail />
+          </Route>
         </CollectionProvider>
-        
-      
     </>
   )
 }

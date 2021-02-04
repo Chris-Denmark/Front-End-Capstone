@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import { CollectionContext } from "./CollectionProvider"
 import "./Collection.css"
-import { useParams, useHistory } from "react-router-dom"
+import { useParams, useHistory, Link } from "react-router-dom"
 
 export const CollectionDetail = () => {
   const { getCollectionById, deleteCollection } = useContext(CollectionContext)
@@ -33,6 +33,11 @@ export const CollectionDetail = () => {
       <button onClick={() => {
           history.push(`/collections/edit/${collection.id}`)
       }}>Edit</button>
+      <button>
+        <Link to={`/popSearch`}>
+          Add to Collection
+        </Link>
+      </button>
     </section>
   )
 }
