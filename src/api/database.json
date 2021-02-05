@@ -1,5 +1,15 @@
 {
+  "users": [
+    {
+      "email": "cdenmark97@gmail.com",
+      "name": "Chris Denmark",
+      "id": 1
+    }
+  ],
   "collections": [
-    
+    {
+      "name": "Chris's Collection",
+      "id": 1
+    }
   ]
 }

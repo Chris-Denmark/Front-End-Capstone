@@ -4,7 +4,7 @@ import "./Collection.css"
 import { useHistory, useParams } from 'react-router-dom';
 
 export const CollectionForm = () => {
-    const { addCollection, getCollectionById, updateCollection } = useContext(CollectionContext)
+    const { addCollection, getCollections, getCollectionById, updateCollection } = useContext(CollectionContext)
 
     const [collection, setCollection] = useState({
       name: ""
@@ -36,19 +36,19 @@ export const CollectionForm = () => {
         }
       }
 
-    useEffect(() => {
-      getCollections().then(() => {
-        if (collectionId) {
-          getCollectionById(collectionId)
-          .then(collection => {
-              setCollection(collection)
-              setIsLoading(false)
-          })
-        } else {
-          setIsLoading(false)
-        }
-      })
-    }, [])
+      useEffect(() => {
+        getCollections().then(() => {
+          if (collectionId) {
+            getCollectionById(collectionId)
+            .then(collection => {
+                setCollection(collection)
+                setIsLoading(false)
+            })
+          } else {
+            setIsLoading(false)
+          }
+        })
+      }, [])
 
     return (
       <form className="collectionForm">
