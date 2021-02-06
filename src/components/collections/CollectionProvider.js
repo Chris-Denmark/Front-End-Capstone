@@ -8,8 +8,8 @@ export const CollectionProvider = (props) => {
     const [collections, setCollections] = useState([])
     const [ searchTerms, setSearchTerms ] = useState("")
 
-    const getCollections = () => {
-        return fetch("http://localhost:8088/collections")
+    const getCollections = (userId) => {
+        return fetch(`http://localhost:8088/collections?userId=${userId}`)
         .then(res => res.json())
         .then(setCollections)
     }

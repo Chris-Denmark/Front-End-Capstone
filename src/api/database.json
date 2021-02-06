@@ -4,12 +4,23 @@
       "email": "cdenmark97@gmail.com",
       "name": "Chris Denmark",
       "id": 1
+    },
+    {
+      "email": "ponyboi@fml.com",
+      "name": "Jordan Williams",
+      "id": 2
     }
   ],
   "collections": [
     {
       "name": "Chris's Collection",
-      "id": 1
+      "id": 1,
+      "userId": 1
+    },
+    {
+      "name": "Not Chris's Collection",
+      "id": 2,
+      "userId": 2
     }
   ]
 }

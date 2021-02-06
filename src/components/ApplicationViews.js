@@ -5,6 +5,8 @@ import { CollectionProvider } from "./collections/CollectionProvider"
 import { CollectionList } from "./collections/CollectionList"
 import { CollectionForm } from "./collections/CollectionForm"
 import { CollectionDetail } from "./collections/CollectionDetail"
+import { PopSearch } from "./pops/PopSearch"
+import { MasterPopProvider } from "./pops/MasterPopProvider"
 
 export const ApplicationViews = () => {
   return (
@@ -31,6 +33,12 @@ export const ApplicationViews = () => {
             <CollectionDetail />
           </Route>
         </CollectionProvider>
+
+        <MasterPopProvider>
+          <Route exact path="/popSearch">
+            <PopSearch />
+          </Route>
+        </MasterPopProvider>
     </>
   )
 }

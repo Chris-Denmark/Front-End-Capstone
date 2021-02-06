@@ -2,12 +2,11 @@ import React, { useState, createContext } from "react"
 
 export const UserPopContext = createContext()
 
-export const PopProvider = (props) => {
+export const UserPopProvider = (props) => {
     const [pops, setPops] = useState([])
-    const [ searchTerms, setSearchTerms ] = useState("")
 
-    const getPops = () => {
-        return fetch("http://localhost:8087/pops")
+    const getUserPops = () => {
+        return fetch("http://localhost:8088/pops")
         .then(res => res.json())
         .then(setPops)
     }
@@ -37,7 +36,7 @@ export const PopProvider = (props) => {
 
     return (
         <UserPopContext.Provider value={{
-            pops, getPops, addPop, getPopById, deletePop, searchTerms, setSearchTerms
+            pops, getUserPops, addPop, getPopById, deletePop
         }}>
             {props.children}
         </UserPopContext.Provider>
