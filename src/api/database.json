@@ -4,12 +4,58 @@
       "email": "cdenmark97@gmail.com",
       "name": "Chris Denmark",
       "id": 1
+    },
+    {
+      "email": "ponyboi@fml.com",
+      "name": "Jordan Williams",
+      "id": 2
+    },
+    {
+      "email": "memes@gmail.com",
+      "name": "Devon Allison",
+      "id": 3
+    },
+    {
+      "email": "bimemes@gmail.com",
+      "name": "Kathryn  Weaver",
+      "id": 4
     }
   ],
   "collections": [
     {
+      "id": 1,
       "name": "Chris's Collection",
+      "userId": 1
+    },
+    {
+      "name": "Not Chris's Collection",
+      "userId": 3,
+      "id": 3
+    },
+    {
+      "name": "The good place collection",
+      "userId": 4,
+      "id": 4
+    }
+  ],
+  "pops": [
+    {
+      "title": "Super Saiyan Goku (First Appearance) (Glow in the Dark)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/847410/Super_Saiyan_Goku_%2528Glow_in_the_Dark%2529_Vinyl_Art_Toys_7e46e69e-d3b1-4442-92b3-6d6e1b3f8f7d_large.JPG",
+      "collectionId": 1,
       "id": 1
+    },
+    {
+      "title": "SSGSS Goku",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/754255/SSGSS_Goku_Vinyl_Art_Toys_2aea2d99-2088-4c26-908e-0ff5d7105b6d_large.jpg",
+      "collectionId": 1,
+      "id": 2
+    },
+    {
+      "title": "Janet (The Good Place)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783983/Janet_%2528The_Good_Place%2529_Vinyl_Art_Toys_b87e661a-aeba-4cba-8138-c7dfd6b5ea32_large.jpg",
+      "collectionId": 4,
+      "id": 3
     }
   ]
 }

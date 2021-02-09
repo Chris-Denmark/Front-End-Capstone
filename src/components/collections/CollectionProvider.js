@@ -6,10 +6,10 @@ export const CollectionContext = createContext()
 // This component establishes what data can be used.
 export const CollectionProvider = (props) => {
     const [collections, setCollections] = useState([])
-    const [ searchTerms, setSearchTerms ] = useState("")
+    const user = localStorage.getItem("popinabox_user")
 
     const getCollections = () => {
-        return fetch("http://localhost:8088/collections")
+        return fetch(`http://localhost:8088/collections?userId=${user}&_embed=pops`)
         .then(res => res.json())
         .then(setCollections)
     }
@@ -48,15 +48,9 @@ export const CollectionProvider = (props) => {
           .then(getCollections)
       }
 
-    /*
-        You return a context provider which has the
-        `animals` state, `getAnimals` function,
-        and the `addAnimal` function as keys. This
-        allows any child elements to access them.
-    */
-    return (
+      return (
         <CollectionContext.Provider value={{
-            collections, getCollections, addCollection, getCollectionById, deleteCollection, updateCollection, searchTerms, setSearchTerms
+            collections, getCollections, addCollection, getCollectionById, deleteCollection, updateCollection
         }}>
             {props.children}
         </CollectionContext.Provider>

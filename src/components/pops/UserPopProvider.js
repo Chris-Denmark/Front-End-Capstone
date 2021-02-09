@@ -2,12 +2,12 @@ import React, { useState, createContext } from "react"
 
 export const UserPopContext = createContext()
 
-export const PopProvider = (props) => {
+// This provides the functions for interacting with pops to add/delete them from a collection. As well as, getting pops from user collections and sending them to the relevant components.
+export const UserPopProvider = (props) => {
     const [pops, setPops] = useState([])
-    const [ searchTerms, setSearchTerms ] = useState("")
 
-    const getPops = () => {
-        return fetch("http://localhost:8087/pops")
+    const getUserPops = () => {
+        return fetch(`http://localhost:8088/pops?_expand=collection`)
         .then(res => res.json())
         .then(setPops)
     }
@@ -18,26 +18,25 @@ export const PopProvider = (props) => {
     }
 
     const addPop = popObj => {
-        return fetch(`http://localhost:8088/collections/pops`, {
+        return fetch(`http://localhost:8088/pops`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(popObj)
         })
-        .then(getPops)
     }
-
+    
     const deletePop = popId => {
         return fetch(`http://localhost:8088/pops/${popId}`, {
             method: "DELETE"
         })
-            .then(getPops)
+        
     }
 
     return (
         <UserPopContext.Provider value={{
-            pops, getPops, addPop, getPopById, deletePop, searchTerms, setSearchTerms
+            pops, getUserPops, addPop, getPopById, deletePop
         }}>
             {props.children}
         </UserPopContext.Provider>
