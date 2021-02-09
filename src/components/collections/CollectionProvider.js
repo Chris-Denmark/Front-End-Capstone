@@ -48,7 +48,7 @@ export const CollectionProvider = (props) => {
           .then(getCollections)
       }
 
-    return (
+      return (
         <CollectionContext.Provider value={{
             collections, getCollections, addCollection, getCollectionById, deleteCollection, updateCollection
         }}>

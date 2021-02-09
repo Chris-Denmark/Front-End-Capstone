@@ -4,7 +4,7 @@ import { Collection } from "./CollectionCard"
 import "./Collection.css"
 import { useHistory } from "react-router-dom"
 
-
+// renders the list of collections
 export const CollectionList = () => {
   const { collections, getCollections } = useContext(CollectionContext)
 
@@ -20,7 +20,7 @@ export const CollectionList = () => {
       <div className="collections">
       {
         collections.map(collection => {
-          return <Collection key={collection.id} collection={collection} />
+          return <Collection key={collection.id} collection={collection} />  // maps over collections that are given from CollectionContext and runs them through the Collection function to generate collection cards.
         })
       }
         <button onClick={() => history.push("/collections/create")}>

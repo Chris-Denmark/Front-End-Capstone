@@ -2,6 +2,7 @@ import React, { useState, createContext } from "react"
 
 export const UserPopContext = createContext()
 
+// This provides the functions for interacting with pops to add/delete them from a collection. As well as, getting pops from user collections and sending them to the relevant components.
 export const UserPopProvider = (props) => {
     const [pops, setPops] = useState([])
 

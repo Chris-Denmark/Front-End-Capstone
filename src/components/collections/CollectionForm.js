@@ -3,25 +3,21 @@ import { CollectionContext } from "../collections/CollectionProvider"
 import "./Collection.css"
 import { useHistory, useParams } from 'react-router-dom';
 
+// the form for creating/editing a collection.
 export const CollectionForm = () => {
     const { addCollection, getCollections, getCollectionById, updateCollection } = useContext(CollectionContext)
-    const user = localStorage.getItem("popinabox_user")
+    const user = localStorage.getItem("popinabox_user") // grabs the localStorage userId.
 
     const [collection, setCollection] = useState({
       name: ""
     })
 
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true); // sets isLoading to true.
 
     const { collectionId } = useParams();
 	  const history = useHistory();
 
-    const handleControlledInputChange = (event) => {
-      const newCollection = { ...collection }
-      newCollection[event.target.id] = event.target.value
-      setCollection(newCollection)
-    }
-
+    // handles when a collection is saved/updated.
     const handleSaveCollection = () => {
         if (collectionId){
           updateCollection({
@@ -39,6 +35,7 @@ export const CollectionForm = () => {
         }
       }
 
+      // runs once the page is rendered. Gets collections then determines, based on if the collectionId exists, the forms render with edit buttons instead of save buttons.
       useEffect(() => {
         getCollections().then(() => {
           if (collectionId) {
@@ -61,7 +58,6 @@ export const CollectionForm = () => {
             <label htmlFor="collectionName">Collection name: </label>
             <input type="text" id="name" required autoFocus className="form-control"
             placeholder="Collection name"
-            onChange={handleControlledInputChange}
             value={collection.name}/>
           </div>
         </fieldset>

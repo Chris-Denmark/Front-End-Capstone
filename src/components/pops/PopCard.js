@@ -1,14 +1,16 @@
-import React, { useContext, useEffect } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import "./Pops.css"
 import { UserPopContext } from "./UserPopProvider"
 import { CollectionContext } from "../collections/CollectionProvider"
 import { useParams, useHistory } from "react-router-dom"
 
+// Pop data is passed through this function to return a pop card that will display the information needed on the DOM.
 export const Pop = ({ pop }) => {
   const { addPop, deletePop, getUserPops } = useContext(UserPopContext)
   const { getCollectionById } = useContext(CollectionContext)
   const { collectionId } = useParams()
   const history = useHistory()
+  const [collection, setCollection] = useState({})
 
   const handleSavePop = () => {
     getCollectionById(collectionId)
@@ -24,8 +26,17 @@ export const Pop = ({ pop }) => {
   const handleDeletePop = () => {  
     deletePop(pop.id)
     .then(() => {
-      history.push(`/collections/detail/${collectionId}`)
+      refreshCollection()
     })
+  }
+
+  const refreshCollection = () => {
+    getCollectionById(collectionId)
+    .then((response) => {
+      setCollection(response)
+    }).then(
+      getUserPops()
+    )
   }
 
   return (

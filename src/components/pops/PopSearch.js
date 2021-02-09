@@ -1,18 +1,14 @@
 import React, { useContext, useEffect, useState } from "react"
 import { MasterPopContext } from "./MasterPopProvider"
-import { CollectionContext } from "../collections/CollectionProvider"
 import { Pop } from "./PopCard"
 import "./Pops.css"
-import { useParams } from "react-router-dom"
 
+// This function is in charge of searching through the data that is returned from the master pops search function and displaying it so the user can pick a pop from it.
 export const PopSearch = () => {
   const { pops, getMasterPopsSearch } = useContext(MasterPopContext)
-  const { addPop, getCollectionById } = useContext(CollectionContext)
-  const [collection, setCollection] = useState({})
 
   const [searchTerm, setSearchTerm] = useState({name: ''})
   const [count, setCount] = useState(0)
-  const {collectionId} = useParams();
 
 
 
@@ -48,7 +44,7 @@ export const PopSearch = () => {
     </form>
     {
       pops.map(pop => {
-        return <Pop key={pop.handle + Math.random()} pop={pop} />
+        return <Pop key={pop.handle} pop={pop} />
       })}
    </> 
   )
