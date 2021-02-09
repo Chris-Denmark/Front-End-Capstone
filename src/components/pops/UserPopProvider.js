@@ -6,7 +6,7 @@ export const UserPopProvider = (props) => {
     const [pops, setPops] = useState([])
 
     const getUserPops = () => {
-        return fetch("http://localhost:8088/pops")
+        return fetch(`http://localhost:8088/pops?_expand=collection`)
         .then(res => res.json())
         .then(setPops)
     }
@@ -17,21 +17,20 @@ export const UserPopProvider = (props) => {
     }
 
     const addPop = popObj => {
-        return fetch(`http://localhost:8088/collections/pops`, {
+        return fetch(`http://localhost:8088/pops`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(popObj)
         })
-        .then(getPops)
     }
-
+    
     const deletePop = popId => {
         return fetch(`http://localhost:8088/pops/${popId}`, {
             method: "DELETE"
         })
-            .then(getPops)
+        
     }
 
     return (

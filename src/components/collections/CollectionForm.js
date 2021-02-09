@@ -5,6 +5,7 @@ import { useHistory, useParams } from 'react-router-dom';
 
 export const CollectionForm = () => {
     const { addCollection, getCollections, getCollectionById, updateCollection } = useContext(CollectionContext)
+    const user = localStorage.getItem("popinabox_user")
 
     const [collection, setCollection] = useState({
       name: ""
@@ -25,12 +26,14 @@ export const CollectionForm = () => {
         if (collectionId){
           updateCollection({
               id: collection.id,
-              name: collection.name
+              name: collection.name,
+              userId: parseInt(user)
           })
           .then(() => history.push(`/collections/detail/${collection.id}`))
         }else {
           addCollection({
               name: collection.name,
+              userId: parseInt(user),
           })
           .then(() => history.push("/collections"))
         }

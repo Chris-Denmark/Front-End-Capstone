@@ -1,13 +1,12 @@
 import React, { useContext, useEffect, useState } from "react"
 import { CollectionContext } from "./CollectionProvider"
 import { Collection } from "./CollectionCard"
-import { CollectionForm } from "./CollectionForm"
 import "./Collection.css"
 import { useHistory } from "react-router-dom"
 
 
 export const CollectionList = () => {
-  const { collections, getCollections, searchTerms } = useContext(CollectionContext)
+  const { collections, getCollections } = useContext(CollectionContext)
 
   const history = useHistory()
 

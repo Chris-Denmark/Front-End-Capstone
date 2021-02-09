@@ -9,18 +9,31 @@
       "email": "ponyboi@fml.com",
       "name": "Jordan Williams",
       "id": 2
+    },
+    {
+      "email": "memes@gmail.com",
+      "name": "Devon Allison",
+      "id": 3
     }
   ],
   "collections": [
     {
-      "name": "Chris's Collection",
       "id": 1,
+      "name": "Chris's Collection",
       "userId": 1
     },
     {
       "name": "Not Chris's Collection",
-      "id": 2,
-      "userId": 2
+      "userId": 3,
+      "id": 3
+    }
+  ],
+  "pops": [
+    {
+      "title": "SSG Goku [Summer Convention]",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/830438/SSG_Goku_%255BSummer_Convention%255D_Vinyl_Art_Toys_fea770d3-c4ed-42f5-92f2-7f87a36de578.jpg",
+      "collectionId": 1,
+      "id": 4
     }
   ]
 }
