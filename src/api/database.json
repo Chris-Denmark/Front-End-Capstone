@@ -19,6 +19,11 @@
       "email": "bimemes@gmail.com",
       "name": "Kathryn  Weaver",
       "id": 4
+    },
+    {
+      "email": "Chris@gmail.com",
+      "name": "Chris Denmark",
+      "id": 5
     }
   ],
   "collections": [
@@ -36,6 +41,16 @@
       "name": "The good place collection",
       "userId": 4,
       "id": 4
+    },
+    {
+      "name": "Chris's Collection",
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "name": "Imposter collection",
+      "userId": 1,
+      "id": 6
     }
   ],
   "pops": [
@@ -56,6 +71,60 @@
       "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783983/Janet_%2528The_Good_Place%2529_Vinyl_Art_Toys_b87e661a-aeba-4cba-8138-c7dfd6b5ea32_large.jpg",
       "collectionId": 4,
       "id": 3
+    },
+    {
+      "title": "Janet (The Good Place)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783983/Janet_%2528The_Good_Place%2529_Vinyl_Art_Toys_b87e661a-aeba-4cba-8138-c7dfd6b5ea32_large.jpg",
+      "collectionId": 6,
+      "id": 4
+    },
+    {
+      "title": "Shawn Kemp (Sonics Home Jersey) (Signed by Shawn Kemp)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/878845/Shawn_Kemp_%2528Sonics_Home_Jersey%2529_%2528Signed_by_Shawn_Kemp%2529_Vinyl_Art_Toys_b17cd05d-a00a-4185-9a7b-1d4218318697_large.jpg",
+      "collectionId": 6,
+      "id": 5
+    },
+    {
+      "title": "Super Saiyan 3 Goku Tee",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895487/Super_Saiyan_3_Goku_Tee_Shirts_and_Jackets_313a0f2b-946c-4700-8cbb-6f927f645d41_large.jpg",
+      "collectionId": 6,
+      "id": 6
+    },
+    {
+      "title": "Goku (Super Saiyan 2) (Glow in the Dark)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/884780/Goku_%2528Ultra_Instinct%2529_%2528Glow_in_the_Dark%2529_Vinyl_Art_Toys_9b4ab524-081b-4c11-8052-1df434ef9028_large.JPG",
+      "collectionId": 6,
+      "id": 7
+    },
+    {
+      "title": "Super Saiyan 3 Goku Tee",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895487/Super_Saiyan_3_Goku_Tee_Shirts_and_Jackets_313a0f2b-946c-4700-8cbb-6f927f645d41_large.jpg",
+      "collectionId": 6,
+      "id": 8
+    },
+    {
+      "title": "SSG Goku [Summer Convention]",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/830438/SSG_Goku_%255BSummer_Convention%255D_Vinyl_Art_Toys_fea770d3-c4ed-42f5-92f2-7f87a36de578.jpg",
+      "collectionId": 6,
+      "id": 9
+    },
+    {
+      "title": "SSGSS Goku",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/754255/SSGSS_Goku_Vinyl_Art_Toys_2aea2d99-2088-4c26-908e-0ff5d7105b6d_large.jpg",
+      "collectionId": 6,
+      "id": 10
+    },
+    {
+      "title": "Super Saiyan 3 Goku Tee",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895487/Super_Saiyan_3_Goku_Tee_Shirts_and_Jackets_313a0f2b-946c-4700-8cbb-6f927f645d41_large.jpg",
+      "collectionId": 6,
+      "id": 11
+    },
+    {
+      "title": "Super Saiyan Goku (First Appearance) (Glow in the Dark)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/847410/Super_Saiyan_Goku_%2528Glow_in_the_Dark%2529_Vinyl_Art_Toys_7e46e69e-d3b1-4442-92b3-6d6e1b3f8f7d_large.JPG",
+      "collectionId": 6,
+      "id": 12
     }
   ]
 }

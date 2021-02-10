@@ -17,6 +17,13 @@ export const CollectionForm = () => {
     const { collectionId } = useParams();
 	  const history = useHistory();
 
+    // 
+    const handleControlledInputChange = (event) => {
+      const newCollection = { ...collection }
+      newCollection[event.target.id] = event.target.value
+      setCollection(newCollection)
+    }
+
     // handles when a collection is saved/updated.
     const handleSaveCollection = () => {
         if (collectionId){
@@ -58,6 +65,7 @@ export const CollectionForm = () => {
             <label htmlFor="collectionName">Collection name: </label>
             <input type="text" id="name" required autoFocus className="form-control"
             placeholder="Collection name"
+            onChange={handleControlledInputChange}
             value={collection.name}/>
           </div>
         </fieldset>
