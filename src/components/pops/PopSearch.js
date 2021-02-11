@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react"
+import { useHistory } from "react-router-dom"
 import { MasterPopContext } from "./MasterPopProvider"
 import { Pop } from "./PopCard"
 import "./Pops.css"
@@ -9,6 +10,7 @@ export const PopSearch = () => {
 
   const [searchTerm, setSearchTerm] = useState({name: ''})
   const [count, setCount] = useState(0)
+  const history = useHistory()
 
 
 
@@ -19,8 +21,10 @@ export const PopSearch = () => {
   }
 
     useEffect(() => {
-        if (count !== 0) {
-            getMasterPopsSearch(searchTerm.name)
+        if (count === 0) {
+          getMasterPopsSearch("null")
+        } else {
+          getMasterPopsSearch(searchTerm.name)
         }
     }, [count])
 
@@ -37,14 +41,14 @@ export const PopSearch = () => {
       </fieldset>
       <button className="btn btn-primary"
           onClick={event => {
-            event.preventDefault() 
+            event.preventDefault()
             setCount(count + 1)
           }}>
         Search</button>
     </form>
     {
       pops.map(pop => {
-        return <Pop key={pop.handle} pop={pop} />
+        return <Pop key={pop.handle + Math.random()} pop={pop} />
       })}
    </> 
   )

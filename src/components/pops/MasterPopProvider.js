@@ -7,7 +7,7 @@ export const MasterPopContext = createContext()
 export const MasterPopProvider = (props) => {
   const [pops, setPops] = useState([])
 
-  const getMasterPopsSearch = async (query) => {
+  const getMasterPopsSearch = (query) => {
     return fetch(`http://localhost:8087/pops?q=${query}`)
     .then(res => res.json())
     .then(setPops)
