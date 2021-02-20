@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom"
 import { MasterPopContext } from "./MasterPopProvider"
 import { Pop } from "./PopCard"
 import "./Pops.css"
+import Grid from "@material-ui/core/Grid";
 
 // This function is in charge of searching through the data that is returned from the master pops search function and displaying it so the user can pick a pop from it.
 export const PopSearch = () => {
@@ -46,10 +47,15 @@ export const PopSearch = () => {
           }}>
         Search</button>
     </form>
+    <Grid container
+    direction="row"
+    justify="center"
+    alignItems="center">
     {
       pops.map(pop => {
         return <Pop key={pop.handle + Math.random()} pop={pop} />
       })}
+    </Grid>
    </> 
   )
 }
