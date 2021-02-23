@@ -4,9 +4,22 @@ import { CollectionContext } from "./CollectionProvider"
 import { UserPopContext } from "../pops/UserPopProvider"
 import { Pop } from "../pops/PopCard"
 import "./Collection.css"
+import Grid from "@material-ui/core/Grid";
+import { makeStyles } from '@material-ui/core/styles';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
+
+const useStyles = makeStyles(theme => ({
+  fab: {
+    position: 'fixed',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+  },
+}));
 
 // Responsible for rendering the details of a collection (e.g. the Edit, Add, and Delete buttons on the collection).
 export const CollectionDetail = () => {
+  const classes = useStyles();
   const { getCollectionById, deleteCollection } = useContext(CollectionContext) // getting the relevant functions from Collection Context which can be found in CollectionProvider.js.
   const { pops, getUserPops } = useContext(UserPopContext) // getting the relevant functions from UserPopContext which can be found in UserPopProvider.js.
 
@@ -43,17 +56,20 @@ export const CollectionDetail = () => {
       <button onClick={() => {
           history.push(`/collections/edit/${collection.id}`)
       }}>Edit</button>
-      <button>
-         <Link to={`/collections/detail/${collection.id}/popSearch`}> {/*link for the Add To Collection button that when clicked takes the user to the popSearch page. */}
-          Add to Collection
-        </Link> 
-      </button>
       <div className="userPops">
+      <Grid container
+    direction="row"
+    justify="center"
+    alignItems="center">
       {
         thing?.map(p => {
           return <Pop key={p.id} pop={p} /> // maps over the array of pops that were filtered by collectionId and runs them through the Pop function to get the information from them that it should display.
         })
       }
+      </Grid>
+      <Fab color="primary" aria-label="add" className={classes.fab}>
+        <AddIcon onClick={() => history.push(`/collections/detail/${collection.id}/popSearch`)} /> {/*link for the Add To Collection button that when clicked takes the user to the popSearch page. */}
+      </Fab>
       </div>
     </section>
   )

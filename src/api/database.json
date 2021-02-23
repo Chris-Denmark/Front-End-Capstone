@@ -28,11 +28,6 @@
   ],
   "collections": [
     {
-      "id": 1,
-      "name": "Chris's Collection",
-      "userId": 1
-    },
-    {
       "name": "Not Chris's Collection",
       "userId": 3,
       "id": 3
@@ -48,24 +43,32 @@
       "id": 5
     },
     {
-      "name": "That one collection",
+      "name": "Chris's Collection",
       "userId": 1,
       "id": 6
+    },
+    {
+      "name": "The Collection",
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "name": "Not Chris's Collection",
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "name": "Ze Colllection",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "name": "That one collection I never used",
+      "userId": 1,
+      "id": 10
     }
   ],
   "pops": [
-    {
-      "title": "Super Saiyan Goku (First Appearance) (Glow in the Dark)",
-      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/847410/Super_Saiyan_Goku_%2528Glow_in_the_Dark%2529_Vinyl_Art_Toys_7e46e69e-d3b1-4442-92b3-6d6e1b3f8f7d_large.JPG",
-      "collectionId": 1,
-      "id": 1
-    },
-    {
-      "title": "SSGSS Goku",
-      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/754255/SSGSS_Goku_Vinyl_Art_Toys_2aea2d99-2088-4c26-908e-0ff5d7105b6d_large.jpg",
-      "collectionId": 1,
-      "id": 2
-    },
     {
       "title": "Janet (The Good Place)",
       "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783983/Janet_%2528The_Good_Place%2529_Vinyl_Art_Toys_b87e661a-aeba-4cba-8138-c7dfd6b5ea32_large.jpg",
@@ -73,10 +76,64 @@
       "id": 3
     },
     {
+      "title": "Goku (Super Saiyan 2) (Glow in the Dark)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/884780/Goku_%2528Ultra_Instinct%2529_%2528Glow_in_the_Dark%2529_Vinyl_Art_Toys_9b4ab524-081b-4c11-8052-1df434ef9028_large.JPG",
+      "collectionId": 6,
+      "id": 4
+    },
+    {
+      "title": "Super Saiyan Goku (First Appearance) (Glow in the Dark)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/847410/Super_Saiyan_Goku_%2528Glow_in_the_Dark%2529_Vinyl_Art_Toys_7e46e69e-d3b1-4442-92b3-6d6e1b3f8f7d_large.JPG",
+      "collectionId": 6,
+      "id": 5
+    },
+    {
+      "title": "Eleanor Shellstrop",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783980/Eleanor_Shellstrop_Vinyl_Art_Toys_f6ea0027-f5a1-4e51-9179-3a0196a9ae03_large.jpg",
+      "collectionId": 4,
+      "id": 6
+    },
+    {
+      "title": "Chidi Anagonye",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783981/Chidi_Anagonye_Vinyl_Art_Toys_e12614bb-3997-455e-8c27-e72120ee0f06_large.jpg",
+      "collectionId": 4,
+      "id": 7
+    },
+    {
+      "title": "Jason Mendoza",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783978/Jason_Mendoza_Vinyl_Art_Toys_884f93ff-2530-4112-8f01-10dff778cd54_large.jpg",
+      "collectionId": 4,
+      "id": 8
+    },
+    {
+      "title": "Michael (The Good Place)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783979/Michael_%2528The_Good_Place%2529_Vinyl_Art_Toys_4e3866b5-ee07-47fd-a189-82e7d4adb6d3_large.jpg",
+      "collectionId": 4,
+      "id": 9
+    },
+    {
+      "title": "Tahani Al-Jamil",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783982/Tahani_Al-Jamil_Vinyl_Art_Toys_563e83f7-dcd1-485d-9f14-3cc151fe7ef5_large.jpg",
+      "collectionId": 4,
+      "id": 10
+    },
+    {
       "title": "Super Saiyan 3 Goku Tee",
       "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895487/Super_Saiyan_3_Goku_Tee_Shirts_and_Jackets_313a0f2b-946c-4700-8cbb-6f927f645d41_large.jpg",
       "collectionId": 6,
-      "id": 4
+      "id": 11
+    },
+    {
+      "title": "Super Saiyan 3 Goku (Glow in the Dark) Pop and Shirt Pack",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895484/Super_Saiyan_3_Goku_%2528Glow_in_the_Dark%2529_Pop_and_Shirt_Pack_Vinyl_Art_Toys_dca15993-301b-481c-ab2a-e0aa3561b93c_large.jpg",
+      "collectionId": 6,
+      "id": 12
+    },
+    {
+      "title": "Goku (Kamehameha) (Metallic)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893254/Goku_%2528Kamehameha%2529_%2528Metallic%2529_Vinyl_Art_Toys_acd103f5-d908-422c-a0dd-dfa6c77c3d4a_large.jpg",
+      "collectionId": 6,
+      "id": 13
     }
   ]
 }
