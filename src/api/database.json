@@ -61,6 +61,11 @@
       "name": "Ze Colllection",
       "userId": 1,
       "id": 9
+    },
+    {
+      "name": "That one collection I never used",
+      "userId": 1,
+      "id": 10
     }
   ],
   "pops": [
@@ -111,6 +116,24 @@
       "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/783982/Tahani_Al-Jamil_Vinyl_Art_Toys_563e83f7-dcd1-485d-9f14-3cc151fe7ef5_large.jpg",
       "collectionId": 4,
       "id": 10
+    },
+    {
+      "title": "Super Saiyan 3 Goku Tee",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895487/Super_Saiyan_3_Goku_Tee_Shirts_and_Jackets_313a0f2b-946c-4700-8cbb-6f927f645d41_large.jpg",
+      "collectionId": 6,
+      "id": 11
+    },
+    {
+      "title": "Super Saiyan 3 Goku (Glow in the Dark) Pop and Shirt Pack",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/895484/Super_Saiyan_3_Goku_%2528Glow_in_the_Dark%2529_Pop_and_Shirt_Pack_Vinyl_Art_Toys_dca15993-301b-481c-ab2a-e0aa3561b93c_large.jpg",
+      "collectionId": 6,
+      "id": 12
+    },
+    {
+      "title": "Goku (Kamehameha) (Metallic)",
+      "imageName": "https://www.hobbydb.com/processed_uploads/catalog_item_photo/catalog_item_photo/image/893254/Goku_%2528Kamehameha%2529_%2528Metallic%2529_Vinyl_Art_Toys_acd103f5-d908-422c-a0dd-dfa6c77c3d4a_large.jpg",
+      "collectionId": 6,
+      "id": 13
     }
   ]
 }

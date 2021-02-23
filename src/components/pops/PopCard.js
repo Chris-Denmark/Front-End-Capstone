@@ -18,10 +18,6 @@ const useStyles = makeStyles({
     maxHeight: 500,
     margin: 5
   },
-  // media: {
-  //   maxHeight:10000,
-  //   maxWidth:10000
-  // }
 });
 // Pop data is passed through this function to return a pop card that will display the information needed on the DOM.
 export const Pop = ({ pop }) => {
@@ -68,7 +64,6 @@ export const Pop = ({ pop }) => {
         style={{ height: "auto", width:"auto", maxHeight: "300px", maxWidth:"300px"}}
         component="img"
         alt={pop.title}
-        // className={classes.media}
         image={pop.imageName}
         title={pop.title}
         />
